@@ -7,11 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
-import AppLayout from "./ui/AppLayout";
-
-// const StyledApp = styled.div`
-//   background-color: #0f172a;
-// `;
+import AppLayout from "./AppLayout";
 
 const router = createBrowserRouter([
   {

@@ -29,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
 }
     --color-white: #FFFFFF;
     --color-grey-100: #E5E7EB;
+    --color-grey-30: rgba(229, 231, 235, 0.1);
+
     --color-grey-200: #4B5563;
     --color-grey-800: #20232A;
 
@@ -60,29 +62,11 @@ html {
 
 body {
   font-family: "Share Tech Mono", sans-serif;
-  color: var(--color-grey-700);
   transition: color 0.3s, background-color 0.3s;
   line-height: 1.5;
   font-size: 1.6rem;
 }
 
-button {
-  cursor: pointer;
-}
-
-select:disabled,
-input:disabled {
-  background-color: var(--color-grey-200);
-  color: var(--color-grey-500);
-}
-
-input:focus,
-button:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid var(--color-brand-600);
-  outline-offset: -1px;
-}
 `;
 
 export default GlobalStyles;
