@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -44,6 +44,19 @@ const GlobalStyles = createGlobalStyle`
     --border-radius-sm: 5px;
     --border-radius-md: 7px;
     --border-radius-lg: 9px;
+
+    --color-react: #61DAFB;
+    --color-redux: #764ABC;
+    --color-router: #CA4245;
+    --color-tailwind: #38BDF8;
+    --color-next: #000000;
+    --color-query: #FF4154;
+    --color-typescript: #3178C6;
+    --color-html: #E34F26;
+    --color-css: #264DE4;
+    --color-styled: #DB7093;
+    --color-javascript: #F7DF1E;
+    --color-git: #F05033;
 }
 
 *,
@@ -66,7 +79,29 @@ body {
   line-height: 1.5;
   font-size: 1.6rem;
 }
-
 `;
+
+export const media = {
+  xl: (...args) => css`
+    @media (min-width: 1200px) {
+      ${css(...args)}
+    }
+  `,
+  large: (...args) => css`
+    @media (min-width: 800px) and (max-width: 1200px) {
+      ${css(...args)}
+    }
+  `,
+  medium: (...args) => css`
+    @media (min-width: 550px) and (max-width: 800px) {
+      ${css(...args)}
+    }
+  `,
+  small: (...args) => css`
+    @media (max-width: 550px) {
+      ${css(...args)}
+    }
+  `,
+};
 
 export default GlobalStyles;

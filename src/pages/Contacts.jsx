@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const StyledContacts = styled.div`
   margin-left: 10rem;
-  font-size: 2.5rem;
+  font-size: 4rem;
 `;
 
-const Ul = styled.ul`
+const ContactsList = styled.ul`
   list-style: none;
 `;
 
-const Li = styled.li`
+const ContactItem = styled.li`
   &:not(:first-child):not(:last-child) {
     padding-left: 2rem;
   }
@@ -24,26 +24,26 @@ const Li = styled.li`
   }
 `;
 
-const P = styled.p`
+const Title = styled.h2`
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 7rem;
   font-weight: 600;
 `;
 
 function Contacts() {
   return (
     <StyledContacts>
-      <P>My contacts</P>
-      <Ul>
-        <Li>contacts {"{"}</Li>
-        <Li>
+      <Title>My contacts</Title>
+      <ContactsList>
+        <ContactItem>contacts {"{"}</ContactItem>
+        <ContactItem>
           email:{" "}
           <a href="mailto:marina.lapteva@hotmail.com" title="Email to Marina">
             marina.lapteva@hotmail.com
           </a>
           ;
-        </Li>
-        <Li>
+        </ContactItem>
+        <ContactItem>
           github:{" "}
           <a
             href="https://github.com/lmv5"
@@ -54,8 +54,8 @@ function Contacts() {
             lmv5
           </a>
           ;
-        </Li>
-        <Li>
+        </ContactItem>
+        <ContactItem>
           linkedin:{" "}
           <a
             href="https://www.linkedin.com/in/marina-lapteva/"
@@ -66,9 +66,9 @@ function Contacts() {
             marina-lapteva
           </a>
           ;
-        </Li>
-        <Li>{"}"}</Li>
-      </Ul>
+        </ContactItem>
+        <ContactItem>{"}"}</ContactItem>
+      </ContactsList>
     </StyledContacts>
   );
 }

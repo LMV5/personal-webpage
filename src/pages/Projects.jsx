@@ -4,11 +4,16 @@ import img1 from "../assets/1.png";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
 
-const Div = styled.div`
+const ProjectsContainer = styled.div`
   display: flex;
+  margin: 0 10rem;
   gap: 3rem;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 3rem;
+`;
+const Title = styled.h2`
+  font-size: 7rem;
+  margin-left: 10rem;
 `;
 
 function Projects() {
@@ -44,12 +49,12 @@ function Projects() {
 
   return (
     <>
-      <h2>Projects I've build so far</h2>
-      <Div>
+      <Title>Projects I've build so far</Title>
+      <ProjectsContainer>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-      </Div>
+      </ProjectsContainer>
     </>
   );
 }
