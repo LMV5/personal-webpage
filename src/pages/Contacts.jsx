@@ -9,12 +9,7 @@ const StyledContacts = styled.div`
     margin-top: 2rem;
   `}
 
-  ${media.medium`
-    /* margin-left: 2rem; */
-  `}
-
   ${media.xl`
-    /* padding-top: 2rem; */
     margin: 0 5rem;
   `}
 `;

@@ -39,7 +39,6 @@ html {
 }
 
 body {
-  /* width: calc(100% - 2rem); */
   background-color: var(--color-blue-900);
   font-family: "Share Tech Mono", sans-serif;
   line-height: 1.5;

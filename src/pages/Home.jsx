@@ -20,10 +20,6 @@ const StyledHome = styled.div`
   margin: 0 2rem;
   width: 70vw;
 
-  ${media.small`
-    margin: 0 2rem;
-  `}
-
   ${media.medium`
     margin: 0 3rem;
   `}
@@ -80,7 +76,7 @@ const SecondaryTitle = styled.h3`
 const SubTitle = styled.h4`
   color: var(--color-blue-100);
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin: 5rem 0 2rem 0;
 
   ${media.small`
     font-size: 1.8rem;
@@ -99,7 +95,7 @@ const Description = styled.p`
 const TechnologyList = styled.ul`
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
   cursor: pointer;
@@ -223,8 +219,8 @@ function Home() {
       <div>
         <SideText>Hello World</SideText>
       </div>
+      <PrimaryTitle>Junior Frontend Developer</PrimaryTitle>
       <div>
-        <PrimaryTitle>Junior Frontend Developer</PrimaryTitle>
         <SecondaryTitle>Hello! I am Marina.</SecondaryTitle>
         <Description>
           I'm a self-taught frontend developer, focusing on React and Next.js

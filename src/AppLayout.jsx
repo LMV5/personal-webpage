@@ -13,8 +13,7 @@ const StyledAppLayout = styled.div`
   ${media.small`
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding: 1rem 0 0 1rem;
   `}
 
   ${media.medium`
@@ -30,8 +29,7 @@ const StyledAppLayout = styled.div`
 
   ${media.xl`
     grid-template-columns: 16rem 1fr;
-    padding-top: 7rem;
-    padding-left: 2rem;
+    padding: 7rem 0 0 2rem;
   `}
 `;
 

@@ -26,15 +26,11 @@ const ProjectsContainer = styled.div`
 
   ${media.medium`
     flex-direction: column;
-    gap: 4rem;
-
   `}
 
   ${media.large`
     flex-direction: column;
-    gap: 6rem;
     margin: 0 2rem;
-
   `}
 
   ${media.xl`
@@ -44,7 +40,6 @@ const ProjectsContainer = styled.div`
 
 const Title = styled.h2`
   font-size: 7rem;
-  /* margin: 0 16rem; */
 
   ${media.small`
     font-size: 2.5rem;

@@ -38,9 +38,6 @@ export default function App() {
     <>
       <RouterProvider router={router} />
       <GlobalStyles />
-      {/* <StyledApp> */}
-
-      {/* </StyledApp> */}
     </>
   );
 }

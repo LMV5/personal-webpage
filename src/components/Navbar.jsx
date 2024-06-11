@@ -14,7 +14,7 @@ const StyledNavbar = styled.nav`
   `}
 `;
 
-const Ul = styled.ul`
+const MenuContainer = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ const Ul = styled.ul`
   `}
 `;
 
-const Li = styled.li`
+const MenuItem = styled.li`
   &:hover {
     background-color: var(--color-blue-500);
   }
@@ -67,23 +67,23 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <MobileMenu setIsMobileMenuOpen={setIsMobileMenuOpen} />
       )}
-      <Ul>
-        <Li>
+      <MenuContainer>
+        <MenuItem>
           <NavLinkStyled to="/" activeclassname="active">
             Home
           </NavLinkStyled>
-        </Li>
-        <Li>
+        </MenuItem>
+        <MenuItem>
           <NavLinkStyled to="/projects" activeclassname="active">
             Projects
           </NavLinkStyled>
-        </Li>
-        <Li>
+        </MenuItem>
+        <MenuItem>
           <NavLinkStyled to="/contacts" activeclassname="active">
             Contacts
           </NavLinkStyled>
-        </Li>
-      </Ul>
+        </MenuItem>
+      </MenuContainer>
     </StyledNavbar>
   );
 }

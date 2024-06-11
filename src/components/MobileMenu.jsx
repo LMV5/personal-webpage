@@ -12,7 +12,7 @@ const NavLinkStyled = styled(NavLink)`
   }
 `;
 
-const Ul = styled.ul`
+const MenuContainer = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ const Ul = styled.ul`
   border-bottom: 1px solid var(--color-grey-200);
 `;
 
-const Li = styled.li`
+const MenuItem = styled.li`
   &:hover {
     background-color: var(--color-blue-500);
   }
@@ -30,8 +30,8 @@ const Li = styled.li`
 
 export default function MobileMenu({ setIsMobileMenuOpen }) {
   return (
-    <Ul>
-      <Li>
+    <MenuContainer>
+      <MenuItem>
         <NavLinkStyled
           to="/"
           activeclassname="active"
@@ -41,8 +41,8 @@ export default function MobileMenu({ setIsMobileMenuOpen }) {
         >
           Home
         </NavLinkStyled>
-      </Li>
-      <Li>
+      </MenuItem>
+      <MenuItem>
         <NavLinkStyled
           to="/projects"
           activeclassname="active"
@@ -52,8 +52,8 @@ export default function MobileMenu({ setIsMobileMenuOpen }) {
         >
           Projects
         </NavLinkStyled>
-      </Li>
-      <Li>
+      </MenuItem>
+      <MenuItem>
         <NavLinkStyled
           to="/contacts"
           activeclassname="active"
@@ -63,7 +63,7 @@ export default function MobileMenu({ setIsMobileMenuOpen }) {
         >
           Contacts
         </NavLinkStyled>
-      </Li>
-    </Ul>
+      </MenuItem>
+    </MenuContainer>
   );
 }

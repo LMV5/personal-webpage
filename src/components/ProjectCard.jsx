@@ -11,22 +11,6 @@ const StyledSection = styled.section`
   &:hover {
     transform: scale(1.1);
   }
-
-  ${media.small`
-
-  `}
-
-  ${media.medium`
-
-  `}
-
-  ${media.large`
-
-  `}
-
-  ${media.xl`
-
-  `}
 `;
 
 const Image = styled.img`
