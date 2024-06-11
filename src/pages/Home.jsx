@@ -225,10 +225,6 @@ const DownloadButton = styled.a`
 function Home() {
   return (
     <StyledHome>
-      {/* <div>
-        <SideText>Hello World</SideText>
-      </div> */}
-      {/* <div> */}
       <PrimaryTitle>Junior Frontend Developer</PrimaryTitle>
       <SecondaryTitle>Hello! I am Marina.</SecondaryTitle>
       <Description>
@@ -240,7 +236,7 @@ function Home() {
         tasks together and contributing value to your company.
       </Description>
       <div>
-        <SubTitle>I use the follow technologies:</SubTitle>
+        <SubTitle>I use the following technologies:</SubTitle>
         <TechnologyList>
           <TechnologyItem>
             <Icon className="html-icon">
@@ -314,7 +310,6 @@ function Home() {
           Download Resume
         </DownloadButton>
       </div>
-      {/* </div> */}
     </StyledHome>
   );
 }
