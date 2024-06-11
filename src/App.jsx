@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 import AppLayout from "./AppLayout";
+import { Analytics } from "@vercel/analytics/react";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,7 @@ export default function App() {
     <>
       <RouterProvider router={router} />
       <GlobalStyles />
+      <Analytics />
     </>
   );
 }
