@@ -8,9 +8,11 @@ const StyledSection = styled.section`
   background-color: var(--color-blue-500);
   transition: all 0.2s;
 
-  &:hover {
+  ${media.xl`
+    &:hover {
     transform: scale(1.1);
   }
+  `}
 `;
 
 const Image = styled.img`
