@@ -12,6 +12,10 @@ const StyledNavbar = styled.nav`
   ${media.medium`
     font-size: 1.5rem;
   `}
+
+  ${media.large`
+    font-size: 2.5rem;
+  `}
 `;
 
 const MenuContainer = styled.ul`

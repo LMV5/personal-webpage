@@ -2,11 +2,17 @@ import styled from "styled-components";
 import { media } from "../styles/GlobalStyles";
 
 const StyledContacts = styled.div`
-  font-size: 2.5rem;
-  margin-left: 2rem;
+  margin: 0 5rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
 
-  ${media.small`
-    margin-top: 2rem;
+  /* ${media.small`
+    margin: 0 3rem;
+  `} */
+
+  ${media.medium`
+    margin: 0 3rem;
   `}
 
   ${media.xl`
@@ -20,15 +26,21 @@ const Title = styled.h2`
   font-weight: 600;
 
   ${media.small`
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin: 2rem 0;
   `}
 
   ${media.medium`
+    font-size: 3rem;
+  `}
+
+  ${media.large`
     font-size: 4rem;
   `}
 `;
 
 const ContactsList = styled.ul`
+  font-size: 3rem;
   list-style: none;
 
   ${media.small`

@@ -8,6 +8,8 @@ import img3 from "../assets/3.png";
 const StyledProjects = styled.div`
   display: flex;
   flex-direction: column;
+  /* margin: 0 auto; */
+  /* justify-content: center; */
 
   ${media.xl`
     margin: 0 5rem;
@@ -17,7 +19,7 @@ const StyledProjects = styled.div`
 const ProjectsContainer = styled.div`
   display: flex;
   gap: 4rem;
-  width: 80%;
+  max-width: 80rem;
   margin-bottom: 5rem;
 
   ${media.small`
@@ -43,16 +45,16 @@ const Title = styled.h2`
   font-size: 5rem;
 
   ${media.small`
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   `}
 
   ${media.medium`
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 2rem;
   `}
 
   ${media.large`
-    font-size: 5rem;
+    font-size: 4rem;
     margin-left: 2rem;
   `}
 `;

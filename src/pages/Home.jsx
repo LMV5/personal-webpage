@@ -17,8 +17,11 @@ import { RiNextjsLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 
 const StyledHome = styled.div`
-  margin: 0 2rem;
+  margin: 0 5rem;
   width: 70vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 
   ${media.medium`
     margin: 0 3rem;
@@ -39,26 +42,26 @@ const PrimaryTitle = styled.h1`
   `}
 
   ${media.medium`
-    font-size: 4rem;
+    font-size: 3rem;
   `}
 
   ${media.large`
-    font-size: 6.5rem;
+    font-size: 4rem;
   `}
 `;
 
-const SideText = styled.h2`
-  position: absolute;
-  top: 50rem;
-  left: -25rem;
-  font-size: 10rem;
-  color: var(--color-grey-30);
-  transform: rotate(270deg);
+// const SideText = styled.h2`
+//   position: absolute;
+//   top: 50rem;
+//   left: -25rem;
+//   font-size: 10rem;
+//   color: var(--color-grey-30);
+//   transform: rotate(270deg);
 
-  ${media.small`
-    display: none;
-  `}
-`;
+//   ${media.small`
+//     display: none;
+//   `}
+// `;
 
 const SecondaryTitle = styled.h3`
   font-size: 3rem;
@@ -69,16 +72,20 @@ const SecondaryTitle = styled.h3`
   `}
 
   ${media.medium`
-    font-size: 3rem;
+    font-size: 2rem;
   `}
 `;
 
 const SubTitle = styled.h4`
   color: var(--color-blue-100);
   font-size: 3rem;
-  margin: 5rem 0 2rem 0;
+  margin-bottom: 3rem;
 
   ${media.small`
+    font-size: 1.8rem;
+  `}
+
+  ${media.medium`
     font-size: 1.8rem;
   `}
 `;
@@ -90,22 +97,25 @@ const Description = styled.p`
   ${media.small`
     font-size: 1.4rem;
   `}
+
+  ${media.medium`
+    font-size: 1.6rem;
+  `}
 `;
 
 const TechnologyList = styled.ul`
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
-  cursor: pointer;
 
   ${media.small`
     grid-template-columns: repeat(2, minmax(0, 1fr));
   `}
 
   ${media.medium`
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   `}
 
   ${media.large`
@@ -120,11 +130,18 @@ const TechnologyItem = styled.li`
   align-items: center;
   border: 1px solid var(--color-blue-200);
   border-radius: 2rem;
-  width: 15rem;
-  height: 15rem;
-  font-size: 2rem;
+  width: 13rem;
+  height: 13rem;
+  font-size: 1.7rem;
+  cursor: pointer;
 
   ${media.small`
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.2rem;
+  `}
+
+  ${media.medium`
     width: 10rem;
     height: 10rem;
     font-size: 1.2rem;
@@ -177,10 +194,14 @@ const TechnologyItem = styled.li`
 
 const Icon = styled.div`
   color: var(--color-grey-100);
-  font-size: 7rem;
+  font-size: 6rem;
   transition: all 0.2s;
 
   ${media.small`
+    font-size: 4.5rem;
+  `}
+
+  ${media.medium`
     font-size: 4.5rem;
   `}
 `;
@@ -208,105 +229,106 @@ const DownloadButton = styled.a`
   }
 
   ${media.small`
+    display: block;
     margin-top: 2rem;
     align-self: start;
+    font-size: 1.5rem;
   `}
 `;
 
 function Home() {
   return (
     <StyledHome>
-      <div>
+      {/* <div>
         <SideText>Hello World</SideText>
-      </div>
+      </div> */}
+      {/* <div> */}
       <PrimaryTitle>Junior Frontend Developer</PrimaryTitle>
+      <SecondaryTitle>Hello! I am Marina.</SecondaryTitle>
+      <Description>
+        I'm a self-taught frontend developer, focusing on React and Next.js and
+        I'm open to learning new technologies despite this. My journey into
+        programming started while I was on maternity leave, and I'm motivated to
+        learn and grow in this dynamic field. It's great to see the immediate
+        results of my work. I'm looking forward to working with a team to tackle
+        tasks together and contributing value to your company.
+      </Description>
       <div>
-        <SecondaryTitle>Hello! I am Marina.</SecondaryTitle>
-        <Description>
-          I'm a self-taught frontend developer, focusing on React and Next.js
-          and I'm open to learning new technologies despite this. My journey
-          into programming started while I was on maternity leave, and I'm
-          motivated to learn and grow in this dynamic field. It's great to see
-          the immediate results of my work. I'm looking forward to working with
-          a team to tackle tasks together and contributing value to your
-          company.
-        </Description>
-        <div>
-          <SubTitle>I use the follow technologies:</SubTitle>
-          <TechnologyList>
-            <TechnologyItem>
-              <Icon className="html-icon">
-                <IoLogoHtml5 />
-              </Icon>{" "}
-              HTML
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="css-icon">
-                <IoLogoCss3 />
-              </Icon>{" "}
-              CSS
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="javascript-icon">
-                <IoLogoJavascript />
-              </Icon>{" "}
-              JavaScript
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="react-icon">
-                <IoLogoReact />
-              </Icon>{" "}
-              React
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="redux-icon">
-                <SiRedux />
-              </Icon>{" "}
-              Redux
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="router-icon">
-                <SiReactrouter />
-              </Icon>{" "}
-              React Router
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="next-icon">
-                <RiNextjsLine />
-              </Icon>{" "}
-              Next.js
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="tailwind-icon">
-                <SiTailwindcss />
-              </Icon>{" "}
-              Tailwind
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="query-icon">
-                <SiReactquery />
-              </Icon>{" "}
-              React Query
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="typescript-icon">
-                <SiTypescript />
-              </Icon>{" "}
-              TypeScript
-            </TechnologyItem>
-            <TechnologyItem>
-              <Icon className="git-icon">
-                <FaGitAlt />
-              </Icon>{" "}
-              Git
-            </TechnologyItem>
-          </TechnologyList>
-          <SubTitle>My Resume:</SubTitle>
-          <DownloadButton href="/web-developer-Marina-Lapteva.pdf" download>
-            Download Resume
-          </DownloadButton>
-        </div>
+        <SubTitle>I use the follow technologies:</SubTitle>
+        <TechnologyList>
+          <TechnologyItem>
+            <Icon className="html-icon">
+              <IoLogoHtml5 />
+            </Icon>{" "}
+            HTML
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="css-icon">
+              <IoLogoCss3 />
+            </Icon>{" "}
+            CSS
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="javascript-icon">
+              <IoLogoJavascript />
+            </Icon>{" "}
+            JavaScript
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="react-icon">
+              <IoLogoReact />
+            </Icon>{" "}
+            React
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="redux-icon">
+              <SiRedux />
+            </Icon>{" "}
+            Redux
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="router-icon">
+              <SiReactrouter />
+            </Icon>{" "}
+            React Router
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="next-icon">
+              <RiNextjsLine />
+            </Icon>{" "}
+            Next.js
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="tailwind-icon">
+              <SiTailwindcss />
+            </Icon>{" "}
+            Tailwind
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="query-icon">
+              <SiReactquery />
+            </Icon>{" "}
+            React Query
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="typescript-icon">
+              <SiTypescript />
+            </Icon>{" "}
+            TypeScript
+          </TechnologyItem>
+          <TechnologyItem>
+            <Icon className="git-icon">
+              <FaGitAlt />
+            </Icon>{" "}
+            Git
+          </TechnologyItem>
+        </TechnologyList>
+        <SubTitle>My Resume:</SubTitle>
+        <DownloadButton href="/web-developer-Marina-Lapteva.pdf" download>
+          Download Resume
+        </DownloadButton>
       </div>
+      {/* </div> */}
     </StyledHome>
   );
 }

@@ -28,7 +28,6 @@ const StyledAppLayout = styled.div`
   `}
 
   ${media.xl`
-    grid-template-columns: 16rem 1fr;
     padding: 7rem 0 0 2rem;
   `}
 `;
@@ -36,6 +35,9 @@ const StyledAppLayout = styled.div`
 const Main = styled.main`
   max-width: 100%;
   display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 `;
 
 function AppLayout() {
