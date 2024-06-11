@@ -17,7 +17,7 @@ import { RiNextjsLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 
 const StyledHome = styled.div`
-  margin: 0 auto;
+  margin: 0 2rem;
   width: 70vw;
 
   ${media.small`
@@ -26,6 +26,10 @@ const StyledHome = styled.div`
 
   ${media.medium`
     margin: 0 3rem;
+  `}
+
+  ${media.xl`
+    margin: 0 5rem;
   `}
 `;
 

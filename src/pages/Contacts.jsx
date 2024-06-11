@@ -2,16 +2,20 @@ import styled from "styled-components";
 import { media } from "../styles/GlobalStyles";
 
 const StyledContacts = styled.div`
-  margin-left: 10rem;
   font-size: 4rem;
+  margin-left: 2rem;
 
   ${media.small`
     margin-top: 2rem;
-    margin-left: 2rem;
   `}
 
   ${media.medium`
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+  `}
+
+  ${media.xl`
+    /* padding-top: 2rem; */
+    margin: 0 5rem;
   `}
 `;
 

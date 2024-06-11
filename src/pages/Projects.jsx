@@ -9,22 +9,15 @@ const StyledProjects = styled.div`
   display: flex;
   flex-direction: column;
 
-  ${media.small`
-    margin-top: 2rem;
-    margin-left: 2rem;
-  `}
-
-  ${media.large`
-    margin-left: 0;
+  ${media.xl`
+    margin: 0 5rem;
   `}
 `;
 
 const ProjectsContainer = styled.div`
   display: flex;
-  gap: 8rem;
-  align-items: center;
-  margin: 0 auto;
-  align-items: stretch;
+  gap: 4rem;
+  width: 100%;
 
   ${media.small`
     flex-direction: column;
@@ -33,26 +26,28 @@ const ProjectsContainer = styled.div`
 
   ${media.medium`
     flex-direction: column;
+    gap: 4rem;
+
   `}
 
   ${media.large`
     flex-direction: column;
+    gap: 6rem;
+    margin: 0 2rem;
+
   `}
 
   ${media.xl`
-    margin: 0 10rem;
+    padding-top: 2rem;
   `}
 `;
 
 const Title = styled.h2`
   font-size: 7rem;
-  margin-left: 10rem;
-  margin-bottom: 2rem;
+  /* margin: 0 16rem; */
 
   ${media.small`
     font-size: 2.5rem;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
   `}
 
   ${media.medium`
@@ -61,6 +56,7 @@ const Title = styled.h2`
   `}
 
   ${media.large`
+    font-size: 5rem;
     margin-left: 2rem;
   `}
 `;

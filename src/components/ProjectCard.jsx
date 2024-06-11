@@ -12,16 +12,20 @@ const StyledSection = styled.section`
     transform: scale(1.1);
   }
 
+  ${media.small`
+
+  `}
+
   ${media.medium`
-    max-width: 45rem;
+
   `}
 
   ${media.large`
-    max-width: 50rem;
+
   `}
 
   ${media.xl`
-    width: 47rem;
+
   `}
 `;
 
