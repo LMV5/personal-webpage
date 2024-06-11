@@ -7,10 +7,6 @@ const StyledContacts = styled.div`
   display: flex;
   flex-direction: column;
 
-  /* ${media.small`
-    margin: 0 3rem;
-  `} */
-
   ${media.medium`
     margin: 0 3rem;
   `}

@@ -21,7 +21,6 @@ const StyledHome = styled.div`
   width: 70vw;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 
   ${media.medium`
     margin: 0 3rem;
@@ -49,19 +48,6 @@ const PrimaryTitle = styled.h1`
     font-size: 4rem;
   `}
 `;
-
-// const SideText = styled.h2`
-//   position: absolute;
-//   top: 50rem;
-//   left: -25rem;
-//   font-size: 10rem;
-//   color: var(--color-grey-30);
-//   transform: rotate(270deg);
-
-//   ${media.small`
-//     display: none;
-//   `}
-// `;
 
 const SecondaryTitle = styled.h3`
   font-size: 3rem;

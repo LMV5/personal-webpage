@@ -1,5 +1,3 @@
-// import styled from "styled-components";
-
 import GlobalStyles from "./styles/GlobalStyles";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
@@ -26,6 +24,10 @@ const router = createBrowserRouter([
         path: "/contacts",
         element: <Contacts />,
       },
+    ],
+  },
+  {
+    children: [
       {
         path: "*",
         element: <NotFound />,

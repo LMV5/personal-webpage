@@ -6,21 +6,14 @@ import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
 
 const StyledProjects = styled.div`
-  display: flex;
-  flex-direction: column;
-  /* margin: 0 auto; */
-  /* justify-content: center; */
-
-  ${media.xl`
-    margin: 0 5rem;
-  `}
+  margin: 0 auto;
+  width: 70vw;
 `;
 
 const ProjectsContainer = styled.div`
   display: flex;
   gap: 4rem;
-  max-width: 80rem;
-  margin-bottom: 5rem;
+  margin: 2rem 0;
 
   ${media.small`
     flex-direction: column;
@@ -33,11 +26,6 @@ const ProjectsContainer = styled.div`
 
   ${media.large`
     flex-direction: column;
-    margin: 0 2rem;
-  `}
-
-  ${media.xl`
-    padding-top: 2rem;
   `}
 `;
 

@@ -1,24 +1,19 @@
 import styled from "styled-components";
 import { media } from "../styles/GlobalStyles";
 
-const StyledSection = styled.section`
+const StyledProjectCard = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
   background-color: var(--color-blue-500);
   transition: all 0.2s;
 
-  ${media.large`
-    height: 36rem;
-  `}
-
   ${media.xl`
-    width: 38rem;
+    width: 35rem;
   
     &:hover {
     transform: scale(1.1);
   }
-
   `}
 `;
 
@@ -122,7 +117,7 @@ const LinkDemo = styled.a`
 
 export default function ProjectCard({ project }) {
   return (
-    <StyledSection key={project.id}>
+    <StyledProjectCard key={project.id}>
       <Image src={project.image} alt="" />
       <Div>
         <Title>{project.title}</Title>
@@ -136,6 +131,6 @@ export default function ProjectCard({ project }) {
           See Demo &#8680;
         </LinkDemo>
       </Div>
-    </StyledSection>
+    </StyledProjectCard>
   );
 }

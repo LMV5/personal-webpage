@@ -8,7 +8,6 @@ const StyledAppLayout = styled.div`
   display: grid;
   grid-template-columns: 18rem 1fr;
   padding-right: 1rem;
-  position: relative;
 
   ${media.small`
     display: flex;
@@ -35,9 +34,6 @@ const StyledAppLayout = styled.div`
 const Main = styled.main`
   max-width: 100%;
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
 `;
 
 function AppLayout() {
