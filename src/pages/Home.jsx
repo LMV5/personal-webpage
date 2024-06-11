@@ -302,10 +302,7 @@ function Home() {
             </TechnologyItem>
           </TechnologyList>
           <SubTitle>My Resume:</SubTitle>
-          <DownloadButton
-            href="./public/web-developer-Marina-Lapteva.pdf"
-            download
-          >
+          <DownloadButton href="/web-developer-Marina-Lapteva.pdf" download>
             Download Resume
           </DownloadButton>
         </div>
