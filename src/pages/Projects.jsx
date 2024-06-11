@@ -17,7 +17,8 @@ const StyledProjects = styled.div`
 const ProjectsContainer = styled.div`
   display: flex;
   gap: 4rem;
-  width: 100%;
+  width: 80%;
+  margin-bottom: 5rem;
 
   ${media.small`
     flex-direction: column;
@@ -39,7 +40,7 @@ const ProjectsContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 7rem;
+  font-size: 5rem;
 
   ${media.small`
     font-size: 2.5rem;
@@ -80,7 +81,7 @@ function Projects() {
       id: 3,
       title: "Notes App",
       description:
-        "This is a simple application for creating and deleting notes",
+        "This is a simple React application for creating and deleting notes",
       image: img3,
       technologies: ["React", "TypeScript", "Tailwind"],
       demo: "https://notes-5.netlify.app",

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../styles/GlobalStyles";
 
 const StyledContacts = styled.div`
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-left: 2rem;
 
   ${media.small`
@@ -16,7 +16,7 @@ const StyledContacts = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 2rem;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 600;
 
   ${media.small`

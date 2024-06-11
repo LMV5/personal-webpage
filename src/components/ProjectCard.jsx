@@ -8,10 +8,17 @@ const StyledSection = styled.section`
   background-color: var(--color-blue-500);
   transition: all 0.2s;
 
+  ${media.large`
+    height: 36rem;
+  `}
+
   ${media.xl`
+    width: 38rem;
+  
     &:hover {
     transform: scale(1.1);
   }
+
   `}
 `;
 

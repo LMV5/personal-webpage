@@ -30,7 +30,7 @@ const StyledHome = styled.div`
 `;
 
 const PrimaryTitle = styled.h1`
-  font-size: 8rem;
+  font-size: 5rem;
   margin-bottom: 5rem;
 
   ${media.small`
@@ -61,7 +61,7 @@ const SideText = styled.h2`
 `;
 
 const SecondaryTitle = styled.h3`
-  font-size: 6rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 
   ${media.small`
@@ -75,7 +75,7 @@ const SecondaryTitle = styled.h3`
 
 const SubTitle = styled.h4`
   color: var(--color-blue-100);
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 5rem 0 2rem 0;
 
   ${media.small`
@@ -84,7 +84,7 @@ const SubTitle = styled.h4`
 `;
 
 const Description = styled.p`
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin-bottom: 4rem;
 
   ${media.small`
