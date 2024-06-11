@@ -1,12 +1,44 @@
 import styled from "styled-components";
+import { media } from "../styles/GlobalStyles";
 
 const StyledContacts = styled.div`
   margin-left: 10rem;
   font-size: 4rem;
+
+  ${media.small`
+    margin-top: 2rem;
+    margin-left: 2rem;
+  `}
+
+  ${media.medium`
+    margin-left: 2rem;
+  `}
+`;
+
+const Title = styled.h2`
+  margin-bottom: 2rem;
+  font-size: 7rem;
+  font-weight: 600;
+
+  ${media.small`
+    font-size: 2.5rem;
+  `}
+
+  ${media.medium`
+    font-size: 4rem;
+  `}
 `;
 
 const ContactsList = styled.ul`
   list-style: none;
+
+  ${media.small`
+    font-size: 1.6rem;
+  `}
+
+  ${media.medium`
+    font-size: 2rem;
+  `}
 `;
 
 const ContactItem = styled.li`
@@ -24,16 +56,10 @@ const ContactItem = styled.li`
   }
 `;
 
-const Title = styled.h2`
-  margin-bottom: 2rem;
-  font-size: 7rem;
-  font-weight: 600;
-`;
-
 function Contacts() {
   return (
     <StyledContacts>
-      <Title>My contacts</Title>
+      <Title>My Contacts</Title>
       <ContactsList>
         <ContactItem>contacts {"{"}</ContactItem>
         <ContactItem>

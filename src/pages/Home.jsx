@@ -17,7 +17,7 @@ import { RiNextjsLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 
 const StyledHome = styled.div`
-  margin-left: 10rem;
+  margin: 0 auto;
   width: 70vw;
 
   ${media.small`
@@ -85,7 +85,7 @@ const SubTitle = styled.h4`
 
 const Description = styled.p`
   font-size: 3.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 
   ${media.small`
     font-size: 1.4rem;
@@ -185,6 +185,34 @@ const Icon = styled.div`
   `}
 `;
 
+const DownloadButton = styled.a`
+  text-decoration: none;
+  color: var(--color-grey-100);
+  background-color: var(--color-green);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-blue-100);
+  transition: transform 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+
+  &:hover {
+    background-color: var(--color-blue-500);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  ${media.small`
+    margin-top: 2rem;
+    align-self: start;
+  `}
+`;
+
 function Home() {
   return (
     <StyledHome>
@@ -195,10 +223,13 @@ function Home() {
         <PrimaryTitle>Junior Frontend Developer</PrimaryTitle>
         <SecondaryTitle>Hello! I am Marina.</SecondaryTitle>
         <Description>
-          I am a Junior Frontend Developer with eight years background in the
-          banking sector. I am confident that my previous experience along with
-          my strong problem-solving skills, make me a valuable addition to any
-          development team.
+          I'm a self-taught frontend developer, focusing on React and Next.js
+          and I'm open to learning new technologies despite this. My journey
+          into programming started while I was on maternity leave, and I'm
+          motivated to learn and grow in this dynamic field. It's great to see
+          the immediate results of my work. I'm looking forward to working with
+          a team to tackle tasks together and contributing value to your
+          company.
         </Description>
         <div>
           <SubTitle>I use the follow technologies:</SubTitle>
@@ -270,6 +301,13 @@ function Home() {
               Git
             </TechnologyItem>
           </TechnologyList>
+          <SubTitle>My Resume:</SubTitle>
+          <DownloadButton
+            href="./public/web-developer-Marina-Lapteva.pdf"
+            download
+          >
+            Download Resume
+          </DownloadButton>
         </div>
       </div>
     </StyledHome>
