@@ -292,12 +292,12 @@ function Home() {
             </Icon>{" "}
             React Query
           </TechnologyItem>
-          <TechnologyItem>
+          {/* <TechnologyItem>
             <Icon className="typescript-icon">
               <SiTypescript />
             </Icon>{" "}
             TypeScript
-          </TechnologyItem>
+          </TechnologyItem> */}
           <TechnologyItem>
             <Icon className="git-icon">
               <FaGitAlt />
